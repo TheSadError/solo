@@ -1,4 +1,6 @@
-# Solo
+
+![](https://visitor-badge.glitch.me/badge?page_id=TheSadError.TheSadError)<h1>Project : Solo <img src="https://emojis.slackmojis.com/emojis/images/1531849430/4246/blob-sunglasses.gif?1531849430" width="30"/></h1>
+<img align='right' src='https://user-images.githubusercontent.com/5713670/87202985-820dcb80-c2b6-11ea-9f56-7ec461c497c3.gif' width='200'>
 
 Solo is deeply vulnerability founder and information gathering tool.
 # Features : 
