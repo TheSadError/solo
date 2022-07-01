@@ -1,5 +1,4 @@
-
-![](https://visitor-badge.glitch.me/badge?page_id=TheSadError.TheSadError)<h1>Project : Solo <img src="https://emojis.slackmojis.com/emojis/images/1531849430/4246/blob-sunglasses.gif?1531849430" width="30"/></h1>
+![](https://visitor-badge.glitch.me/badge?page_id=TheSadError.TheSadError) ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)<p><a href="https://github.com/TheSadError"><img src="https://img.shields.io/badge/-Github-red?&style=for-the-badge&logo=github&logoColor=white" height=25></a><a href="https://www.youtube.com/channel/UCUfTuo3-85qD_7v1n-W98rw"><img src="https://img.shields.io/badge/-YouTube-red?&style=for-the-badge&logo=youtube&logoColor=white" height=25></a></p><h1>Project : Solo <img src="https://emojis.slackmojis.com/emojis/images/1531849430/4246/blob-sunglasses.gif?1531849430" width="30"/></h1>
 <img align='right' src='https://user-images.githubusercontent.com/5713670/87202985-820dcb80-c2b6-11ea-9f56-7ec461c497c3.gif' width='200'>
 
 Solo is deeply vulnerability founder and information gathering tool.
