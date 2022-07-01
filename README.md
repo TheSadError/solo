@@ -27,7 +27,7 @@ some parameters :
 --o true : set osint true fore scanning
 type --help for commands
 ```
-# **OSINT URL LIST**\
+### **OSINT URL LIST**
 ```
 [
     "https://github.com/",
