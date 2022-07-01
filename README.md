@@ -1,4 +1,4 @@
-# Foobar
+# Solo
 
 Solo is deeply vulnerability founder and information gathering tool.
 # Features : 
