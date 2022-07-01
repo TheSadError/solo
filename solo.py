@@ -4,7 +4,9 @@ from time import *
 import optparse
 import random
 import sys
-import pscan
+import core.pscan as pscan
+import core.oscan as oscan
+
 def progress(percent=0, width=40):
     left = width * percent // 100
     right = width - left
@@ -18,10 +20,12 @@ def load():
         progress(i)
         sleep(0.01)
 
-def start(us,ps):
-    if(ps == "True"):
+def start(us,ps,os):
+    if(ps == "true"):
         pscan.portscan(us)
-
+    if(os == "true"):
+        oscan.oscan(us)
+        
 if __name__ == "__main__":
     parser = optparse.OptionParser(Fore.BLUE+f"""
 {Fore.BLUE} _______  _______  ___      _______ 
@@ -35,15 +39,18 @@ if __name__ == "__main__":
                         {Fore.RED} Coded By @thesaderror 
                         {Fore.GREEN} Github: TheSadError
 
-{Fore.BLUE}Usage : python3 solo.py --p True --u example.com
+{Fore.BLUE}Usage : python3 solo.py --p true --u example.com
 
     """)
     parser.add_option("--p",dest = "port",type="string",help = "Port scanning parameter")
-    parser.add_option("--u",dest = "url",type="string",help = "Target URL")
+    parser.add_option("--u",dest = "url",type="string",help = "Target URL , Username Usage : --u TheSadError , --u thesaderror.com")
+    parser.add_option("--o",dest = "osint",type="string",help = "Osint Option Usage : --o true")
     (options,args) = parser.parse_args()
     port = options.port
     url = options.url
-    if(port == None and url == None):
+    osint = options.osint
+    if(url == None):
         print(parser.usage)
         exit(0)
-    start(url,port)
+
+    start(url,port,osint)
