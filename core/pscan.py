@@ -3,7 +3,7 @@ from colorama import *
 
 
 def portscan(url):
-    print(Fore.BLACK+f"""
+    print(f"""
 [+] Starting Port Scanning!
     """)
     url = socket.gethostbyname(url)
