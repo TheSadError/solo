@@ -54,5 +54,5 @@ if __name__ == "__main__":
     if(url == None):
         print(parser.usage)
         exit(0)
-    print(Fore.BLACK+"Starting solo scanner 2.3 ( https://github.com/TheSadError/solo ) at %s" % e)
+    print("Starting solo scanner 2.3 ( https://github.com/TheSadError/solo ) at %s" % e)
     start(url,port,osint)
