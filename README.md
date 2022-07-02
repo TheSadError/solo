@@ -18,6 +18,16 @@ git clone https://github.com/TheSadError/solo
 cd solo
 python3 solo.py --h # for help about commands
 ```
+
+## Usage
+
+```python
+some parameters : 
+--p true : port scanning
+--u username,url : its for set username or url
+--o true : set osint true fore scanning
+type --help for commands
+```
 ## Websites for osint
 ```json
 [   
@@ -83,15 +93,6 @@ python3 solo.py --h # for help about commands
     "https://hackerearth.com/@",
     "https://news.ycombinator.com/user?id="
 ]
-```
-## Usage
-
-```python
-some parameters : 
---p true : port scanning
---u username,url : its for set username or url
---o true : set osint true fore scanning
-type --help for commands
 ```
 
 ## License
