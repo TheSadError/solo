@@ -3,8 +3,10 @@
 
 Solo is deeply vulnerability founder and information gathering tool.
 # Features : 
-Solo Is FAST!
-And solo is created by python language. Still updating added some OSINT tools. Port scanning is working finely. Its showing port versions also.
+**Solo Is FAST!**
+**Solo can run on linux/windows.**
+**Solo is deep scanning tool.**
+**Solo is upgrading day by day.**
 ## Tools
 **Port Scanning**\
 **DEEP Osint Scan**\
