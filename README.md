@@ -16,6 +16,7 @@ And solo is created by python language. Still updating added some OSINT tools. P
 ```bash
 git clone https://github.com/TheSadError/solo
 cd solo
+pip3 install -r requirements.txt
 python3 solo.py --h # for help about commands
 ```
 
