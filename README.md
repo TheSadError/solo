@@ -97,6 +97,7 @@ type --help for commands
     "https://news.ycombinator.com/user?id="
 ]
 ```
-
+### Contact
+**Discord : https://discord.gg/QJAj3CUB**
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
