@@ -101,7 +101,8 @@ domainlst = [
 ]
 def oscan(us):
     print(f"""
-    
+[+] Starting OSINT scanning...
+
     [!] Scanning INFORMATION : 
     Username : {us}
     Websites : {len(urllst)} 
