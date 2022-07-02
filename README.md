@@ -19,7 +19,7 @@ cd solo
 python3 solo.py --h # for help about commands
 ```
 ## Websites for osint
-```
+```json
 [   
     "https://github.com/",
     "https://www.behance.net/",
