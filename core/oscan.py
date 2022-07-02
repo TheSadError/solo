@@ -100,7 +100,7 @@ domainlst = [
     ".itch.io",
 ]
 def oscan(us):
-    print(Fore.BLACK+f"""
+    print(f"""
     
     [!] Scanning INFORMATION : 
     Username : {us}
