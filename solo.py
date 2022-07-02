@@ -41,7 +41,8 @@ if __name__ == "__main__":
                         {Fore.RED} Coded By @thesaderror 
                         {Fore.GREEN} Github: TheSadError
 
-{Fore.BLUE}Usage : python3 solo.py --p true --u example.com
+{Fore.BLUE}Usage (Port Scan)  : python3 solo.py --p true --u example.com
+{Fore.BLUE}Usage (OSINT Scan) : python3 solo.py --o true --u username
 
     """)
     parser.add_option("--p",dest = "port",type="string",help = "Port scanning parameter")
