@@ -40,6 +40,7 @@ Command : python3 solo.py --o true --u thesaderror
     <img src="Images/osint.png" width="800"> 
   </p>
 </div>
+
 **Port & Version Scan**
 ```
 Command : python3 solo.py --p true --u testphp.vulnweb.com
