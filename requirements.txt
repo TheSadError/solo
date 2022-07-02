@@ -1,0 +1,7 @@
+colorama
+socket
+requests
+time
+os
+random
+optparse
