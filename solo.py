@@ -6,6 +6,7 @@ import random
 import sys
 import core.pscan as pscan
 import core.oscan as oscan
+import datetime
 
 def progress(percent=0, width=40):
     left = width * percent // 100
@@ -27,6 +28,7 @@ def start(us,ps,os):
         oscan.oscan(us)
         
 if __name__ == "__main__":
+    e = datetime.datetime.now()
     parser = optparse.OptionParser(Fore.BLUE+f"""
 {Fore.BLUE} _______  _______  ___      _______ 
 {Fore.BLUE}|       ||       ||   |    |       |
@@ -52,5 +54,5 @@ if __name__ == "__main__":
     if(url == None):
         print(parser.usage)
         exit(0)
-
+    print(Fore.BLACK+"Starting solo scanner 2.3 ( https://github.com/TheSadError/solo ) at %s" % e)
     start(url,port,osint)
