@@ -31,6 +31,25 @@ some parameters :
 --o true : set osint true fore scanning
 type --help for commands
 ```
+### **OSINT**
+```
+Command : python3 solo.py --o true --u thesaderror
+```
+<div>
+  <p align="center">
+    <img src="Images/osint.png" width="800"> 
+  </p>
+</div>
+### **Port & Version Scan**
+```
+Command : python3 solo.py --p true --u testphp.vulnweb.com
+```
+<div>
+  <p align="center">
+    <img src="Images/port.png" width="800"> 
+  </p>
+</div>
+
 ## Websites for osint
 ```json
 [   
