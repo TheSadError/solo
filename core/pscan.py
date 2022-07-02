@@ -1,6 +1,11 @@
 import socket
 from colorama import *
+
+
 def portscan(url):
+    print(Fore.BLACK+f"""
+[+] Starting Port Scanning!
+    """)
     url = socket.gethostbyname(url)
     print(Fore.BLUE+"\tPort  \tSTATE  \tVersion")
     for port in range(1,65535):
