@@ -1,1 +1,3 @@
 1. port scanning
+2. osint scan
+3. working on sql & xss scanner
