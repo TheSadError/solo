@@ -1,5 +1,9 @@
 from colorama import *
 from time import *
+import itertools 
+import string    
+import time      
+
 def progress(percent=0, width=40):
     left = width * percent // 100
     right = width - left
@@ -12,22 +16,26 @@ def load():
     for i in range(101):
         progress(i)
         sleep(0.01)
-class options : 
-    name = "name"
-    username = "username"
-    birthyear = 0
-    momname = "mom"
-    fathername = "father"
-    hobby = "luckynumber"
-    wordlistl = "wr"
-    pet = "pet"
-    
+
+
+def gen(st,et,nm):
+    chars = string.ascii_lowercase + string.ascii_uppercase + string.digits + '1'+'2'+'3'+'4'+'5'+'6'+'7'+'8'+'9'+'0'+'@'+'£'+'!'+'<'+'>'+'.'+'*'+'-'+'+'+'?'+'{'+'}'+'['+']'+'='+'|'
+    attempts = 0
+    f = open(nm,'a')
+    for password_length in range(st, et):
+        for guess in itertools.product(chars,repeat=password_length): 
+            attempts += 1
+            guess = ''.join(guess)
+            f.write(guess) 
+            f.write("\n")
+            print(guess, attempts)      
+    f.close()
 def create(option):
-    options.name = input(Fore.BLUE+"[+] Input victim name : ")
-    options.username = input(Fore.BLUE+"[+] Input victim username : ")
-    options.birthyear = input(Fore.BLUE+"[+] Input victim birth year : ")
-    options.momname = input(Fore.BLUE+"[+] Input victim mom name: ")
-    options.fathername = input(Fore.BLUE+"[+] Input victim father name : ")
-    options.hobby = input(Fore.BLUE+"[+] Input victim hobby: ")
-    options.pet = input(Fore.BLUE+"[+] Input victim pet name : ")
-    options.wordlistl = input(Fore.GREEN+"[!] Input wordlist length : ")
+
+    st = 6
+    et = 15
+    nm = "wordlist-output.txt"
+    start_time = time.time()
+    gen(st,et,nm)
+    end_time = time.time()
+    print(end_time-start_time)
