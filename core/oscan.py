@@ -43,7 +43,6 @@ urllst = [
     "https://world.kano.me/",
     "https://yandex.ru/collections/user/",
     "https://www.paypal.com/paypalme/",
-    "https://imageshack.us/user/",
     "https://www.crunchyroll.com/user/",
     "https://support.t-mobile.com/people/",
     "https://about.me/",
@@ -101,14 +100,13 @@ domainlst = [
 ]
 def oscan(us):
     print(f"""
-[+] Starting OSINT scanning...
+--> OSINT SCAN
 
-    [!] Scanning INFORMATION : 
     Username : {us}
     Websites : {len(urllst)} 
     """)
     print(Fore.BLUE+"""
-    [+] Normal Scan! Mode : Normal Web
+    --> Normal Scan! Mode : Normal Web
     """)
     for i in range(0,len(urllst)):
         req = requests.get(urllst[i]+us)
