@@ -4,7 +4,7 @@ from colorama import *
 
 def portscan(url):
     print(f"""
-[+] Starting Port Scanning...
+--> Starting Port Scanning...
     """)
     url = socket.gethostbyname(url)
     print(Fore.BLUE+"\tPort  \tSTATE  \tVersion")
