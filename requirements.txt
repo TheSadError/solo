@@ -6,3 +6,5 @@ os
 random
 optparse
 datetime
+google
+beautifulsoup4
