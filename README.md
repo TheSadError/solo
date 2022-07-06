@@ -29,7 +29,7 @@ some parameters :
 --p true : port scanning
 --u username,url : its for set username or url
 --o true : set osint true fore scanning
---w start : start creating wordlist
+--w start or true : start creating biggest wordlist
 type --help for commands
 ```
 **OSINT**
