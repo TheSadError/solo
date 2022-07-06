@@ -22,9 +22,9 @@ def load():
         progress(i)
         sleep(0.01)
 
-def start(us,ps,os,wr):
+def start(us,ps,os,wr,md):
     if(ps == "true"):
-        pscan.portscan(us)
+        pscan.portscan(us,md)
     if(os == "true"):
         oscan.oscan(us)
     if(wr == "start" or wr == "true"):
@@ -45,20 +45,25 @@ if __name__ == "__main__":
                         {Fore.GREEN} Github: TheSadError
 
 {Fore.BLUE}Usage (Port Scan)  : python3 solo.py --p true --u example.com
+                --> slow mode full scan: python3 solo.py --p true --m slow --u example.com
+                --> fast mode vuln port : python3 solo.py --p true --m fast --u example.com
 {Fore.BLUE}Usage (OSINT Scan) : python3 solo.py --o true --u username
+{Fore.BLUE}Usage (Create Wordlist) : python3 solo.py --w start 
 
     """)
     parser.add_option("--p","--port",dest = "port",type="string",help = "Port scanning parameter")
     parser.add_option("--u","--U",dest = "url",type="string",help = "Target URL , Username Usage : --u TheSadError , --u thesaderror.com")
     parser.add_option("--o","--osint",dest = "osint",type="string",help = "Osint Option Usage : --o true")
     parser.add_option("--w","--word",dest = "wordlist",type="string",help = "Create big wordlist option : --w start")
+    parser.add_option("--m","--mode",dest = "mode",type="string",help = "Full scan mode : --m fast , --m slow (fast = fast scan for port scan and slow == full port scan 65535)")
     (options,args) = parser.parse_args()
     port = options.port
     url = options.url
     osint = options.osint
     wordlist = options.wordlist
+    mode = options.mode
     print("Starting solo scanner 2.3 ( https://github.com/TheSadError/solo ) at %s" % e)
     if(url == None and port == None and osint == None and wordlist == None ):
         print(parser.usage)
         exit(0)
-    start(url,port,osint,wordlist)
+    start(url,port,osint,wordlist,mode)
