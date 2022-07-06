@@ -30,8 +30,7 @@ def gen(st,et,nm):
             f.write("\n")
             print(guess, attempts)      
     f.close()
-def create(option):
-
+def create():
     st = 6
     et = 15
     nm = "wordlist-output.txt"
