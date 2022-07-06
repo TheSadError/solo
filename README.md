@@ -25,11 +25,18 @@ python3 solo.py --h # for help about commands
 ## Usage
 
 ```python
-some parameters : 
+help : 
+
 --p true : port scanning
+    --> --m slow (full port scan 65535 ports)
+    --> --m fast (vulnerable spesific port scan)
+    
 --u username,url : its for set username or url
+
 --o true : set osint true fore scanning
+
 --w start or true : start creating biggest wordlist
+
 type --help for commands
 ```
 **OSINT**
