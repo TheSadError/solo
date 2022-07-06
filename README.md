@@ -3,7 +3,7 @@
 
 Solo is deeply vulnerability founder and information gathering tool.
 # Features : 
-**Solo Is FAST!**
+**Solo Is FAST! use "--m fast" to make faster **
 **Solo can run on linux/windows.**
 **Solo is deep scanning tool.**
 **Solo is upgrading day by day.**
