@@ -47,7 +47,9 @@ if __name__ == "__main__":
 {Fore.BLUE}Usage (Port Scan)  : python3 solo.py --p true --u example.com
                 --> slow mode full scan: python3 solo.py --p true --m slow --u example.com
                 --> fast mode vuln port : python3 solo.py --p true --m fast --u example.com
+                
 {Fore.BLUE}Usage (OSINT Scan) : python3 solo.py --o true --u username
+
 {Fore.BLUE}Usage (Create Wordlist) : python3 solo.py --w start 
 
     """)
